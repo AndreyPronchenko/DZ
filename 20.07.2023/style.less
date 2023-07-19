@@ -1,0 +1,854 @@
+
+@color1: rgb(246, 246, 241);
+@color2: rgb(75, 155, 241);
+@color3: rgb(224, 223, 200);
+@color4: rgb(61, 108, 247);
+@color5: rgb(114, 36, 240);
+@color6: #443c3c;
+@color7: black;
+@color8: rgb(27, 134, 15);
+@color9: rgb(87, 77, 77);
+@color10: white;
+@color11: rgba(236, 228, 228, 0);
+@color12: rgba(255, 252, 252, 0.169);
+@color13: rgb(233, 244, 244);
+@color14: rgb(8, 58, 11);
+@color15: rgb(201, 185, 185);
+@color16: rgb(59, 47, 47);
+@color17: slategray;
+
+
+@font-face{
+    font-family: "Caveat";
+    src: url(Fonts/Fonts/caveat-variablefont_wght-webfont.woff) format ("woff"), 
+    url(Fonts/Fonts/caveat-variablefont_wght-webfont.woff2) format ("woff2");
+
+    font-family: "Brunoace";
+    src: url(Fonts/Fonts1/webfontkit-20230710-065633/brunoace-regular-webfont.woff) format ("woff"), 
+    url(Fonts/Fonts1/webfontkit-20230710-065633/brunoace-regular-webfont.woff2) format ("woff2");
+
+    font-family: "Racingsansone";
+    src: url(Fonts/Fonts2/racingsansone-regular-webfont.woff) format ("woff"), 
+    url(Fonts/Fonts2/racingsansone-regular-webfont.woff2) format ("woff2");
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ font-family: arima;
+}
+/* __________header___________________ */
+header{
+    padding: 1%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 1px solid @color6;
+}
+
+.head_two img{  /* Размер изображений */
+    width: 20px;
+}
+
+.head_two{  /* Картинки */
+    display: flex;
+    gap: 30px;
+    justify-self: end;
+}
+
+.head_one{
+    display: flex;
+    gap: 30px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 14pt;
+    font-weight: bolder; 
+    font-family: "Racingsansone", monospace;
+}
+
+.head_one a{
+    text-decoration: none;
+    color: @color7;
+    font-family: "Brunoace", cursive;
+}
+
+.menu{
+    display: none;
+}
+
+.head_one a:hover {
+    color: @color8;
+}
+
+/* ______________main_____________________ */
+.box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(500px, auto);
+    border-bottom: 1px solid;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+}
+
+.box div:nth-child(1){
+    justify-self: center;
+    align-self: center;
+    padding: 50px;
+}
+
+h1{
+    margin-bottom: 8%;
+    font-size: 35pt;
+    font-family: "Racingsansone", monospace;
+}
+
+.p1{
+    text-align: justify;
+    font-size: 16pt;
+    margin-bottom: 20px;
+    font-family: "Caveat";
+}
+
+.p2{
+    text-align: justify;
+    font-size: 12pt;
+    margin-bottom: 20px;
+    font-family: "Caveat";
+}
+
+.start{
+    background: linear-gradient(400deg, @color1, @color2, @color3);
+	cursor: pointer;
+    border: 1px solid @color9;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 25px;
+    color:  @color9;
+    font-size: 14pt;
+    font-family: "Brunoace", cursive;
+}
+
+.box1{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-bottom: 1px solid;
+    grid-template-rows: minmax(350px, auto);
+}
+
+.box1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.box1 p{
+    font-family: "Caveat";
+}
+
+.box1 div:nth-child(2){
+   justify-self: center;
+   align-self: center;
+   width: 80%;
+}
+
+.box2{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 1px solid;
+    grid-template-rows: minmax(350px, auto);
+}
+
+.box2 p{
+    font-family: "Caveat";
+}
+
+.box2 img{
+    width: 100%;
+    height: 100%;
+}
+
+.box2 div:nth-child(1){
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+ }
+
+ .box1 h3, .box2 h3{
+    margin-bottom: 5%;
+    font-size: 25pt;
+    font-weight: normal;
+    font-family: "Racingsansone", monospace;
+}
+
+.box1 p, .box2 p{
+    text-align: justify;
+    font-size: 12pt;
+    margin-bottom: 20px;
+}
+
+.More{
+    background: linear-gradient(400deg, @color1, @color2, @color3);
+	cursor: pointer;
+    border: 1px solid @color9;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 25px;
+    color:  @color9;
+    font-size: 14pt;
+    font-family: "Brunoace", cursive;
+}
+
+
+/* ___________Галерея_____________*/
+
+.gal{
+  padding-top: 5%;
+  padding-bottom: 3%;
+
+}
+
+.gal h3{
+    margin-bottom: 3%;
+    font-size: 25pt;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Racingsansone", monospace;
+}
+
+.galImg{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr;
+    grid-template-rows: minmax(300px, auto);
+}
+
+.galImg img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.st1, .st2, .galText{
+    display: none;
+}
+
+.st1, .st2{
+    font-size: 55pt;
+    color: @color10;
+
+}
+
+.st1{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    align-self: center;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.galImg, .galim1{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.st2{
+    grid-column: 4;
+    grid-row: 1;
+    justify-self: end;
+    align-self: center;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.galImg, .galim4{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.galText{
+    grid-column: 2;
+    grid-row: 1;
+    color: @color10;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 10%;
+}
+
+.galText h4{
+    margin-bottom: 15%;
+    font-weight: normal;
+    font-size: 16pt;
+    font-family: "Brunoace", cursive;
+}
+
+.galText p{
+    margin-bottom: 15%;
+    font-size: 12pt;
+    font-family: "Caveat";
+}
+
+.galImg, .galim2{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.galMore{
+    background-color: @color11;
+    border: 1px solid @color12;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 20px;
+    color:  @color13;
+    font-size: 12pt;
+    font-family: "Brunoace", cursive;
+}
+
+.galImg:hover .st1{
+        display: block;
+}
+
+.galImg:hover .st2{
+    display: block;
+}
+
+.galImg:hover .galText{
+    display: block;
+}
+
+/* -----------------Другой раздел----------------- */
+
+.tab{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 5%;
+    padding: 0 3% 5% 3%;
+}
+
+.icon{
+    font-size: 40pt;
+    
+}
+
+.tab p{
+    font-family: "Caveat";
+}
+
+.tab h3{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    margin-bottom: 5%;
+    font-size: 25pt;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Racingsansone", monospace;
+}
+.tab div{
+    padding: 15%;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
+
+.tab h4{
+    padding-top: 2%;
+    padding-bottom: 8%;
+    font-family: "Brunoace", fantasy;
+}
+
+.boxBorder1, .boxBorder2, .boxBorder4,.boxBorder5{
+    border-right: 1px solid @color14;
+
+}
+.boxBorder1, .boxBorder2, .boxBorder3{
+    border-bottom: 1px solid @color14;
+
+}
+
+
+/* ---------------ФОРМА---------------------- */
+
+.form h3{
+    margin-bottom: 5%;
+    font-size: 25pt;
+    font-weight: normal;
+    text-align: center;
+    font-family: "Brunoace", cursive;
+}
+
+.FormTwo{
+    width: 60%;
+    grid-row-gap: 1%;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    margin: auto;
+}
+
+/* -----------1 блок---------------------- */
+
+.FormTwo .block1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7%;
+    width: 100%;
+    padding: 1% 3%;
+    box-sizing: border-box;
+}
+
+.block1 input{
+    padding: 3%;
+    width: 90%;
+}
+
+.block1 input::placeholder{
+  color: @color17;
+  font-style: italic;
+  font-size: 13pt;
+}
+
+.block1 div{
+    font-weight: bold;
+    font-family: "Brunoace", cursive;
+}
+
+/* -----------2 блок---------------------- */
+
+.FormTwo .block2{
+    display: flex;
+    gap: 2%;
+    width: 100%;
+    padding: 1% 3%;
+    box-sizing: border-box;
+}
+
+.FormTwo .block2 div{
+    font-weight: bold;
+    font-family: "Brunoace", cursive;
+}
+
+.block2 span{
+    font-family: "Brunoace", cursive;
+}
+
+/* -----------3 блок---------------------- */
+
+.FormTwo>div:nth-child(3){
+    padding: 1% 3%;
+    box-sizing: border-box;
+}
+
+.FormTwo select{
+    margin-top: 1%;
+    padding: 1%;
+    width: 100%;
+    font-family: "Brunoace", cursive;
+}
+
+.FormTwo>div:nth-child(3) div{
+    font-weight: bold;
+    font-family: "Brunoace", cursive;
+}
+
+/* -----------4 блок---------------------- */
+
+.FormTwo>div:nth-child(4){
+    padding: 1% 3%;
+    box-sizing: border-box;
+}
+
+.FormTwo textarea {
+    width: 100%;
+    height: 200px;
+    margin-top: 1%;
+}
+
+.FormTwo>div:nth-child(4) div{
+    font-weight: bold;
+    font-family: "Brunoace", cursive;
+}
+
+/* -----------5 блок---------------------- */
+
+.FormTwo>div:nth-child(5){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1% 3%;
+    box-sizing: border-box;
+}
+
+.FormTwo>div:nth-child(5) .send{
+    justify-self: end;
+    margin-left: 330px;
+}
+
+.send{
+    background: radial-gradient(40% 60%, @color4, @color5);
+    border: 1px solid @color9;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 20px;
+    color:  @color15;
+    font-size: 12pt;
+    font-family: "Racingsansone", cursive;
+    cursor: pointer;
+}
+
+.FormTwo>div:nth-child(5) label{
+    font-weight: bold;
+}
+
+.form{
+    padding-bottom: 5%;
+    border-bottom: 1px solid @color16;
+}
+
+.di span{
+    font-family: "Brunoace", cursive;
+}
+
+/* -----------Подвал---------------------- */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 50%;
+    padding: 5% 3%;
+}
+
+footer .box_img{
+    display: flex;
+    gap: 3%;
+    justify-self: center;
+
+}
+
+footer .box_img div{
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 3%;
+    border: 2px solid @color17;
+    
+}
+
+footer .box_img img{
+    width: 100%;
+    height: 100%;
+}
+
+footer .copy{
+    justify-self: center;
+    text-transform: uppercase;
+    font-family: "Brunoace", fantasy;
+}
+
+/* -----------Медиазапросы---------------------- */
+
+@media screen and (min-width: 600px) and (max-width: 850px){
+
+    /* ---------Навигация(Заголовок)-------------- */
+    
+    header{
+        padding: 3%;
+        grid-template-columns: 1fr;
+    }
+    
+    .head_two{  /* Картинки */
+        display: none;
+    }
+/* .se1  Блоки с картинкамии кнопками */
+
+.box{
+grid-template-columns: repeat(2, 1fr);
+}
+
+h1{
+    font-size: 25pt;
+}
+
+.p1{
+    font-size: 14pt;
+}
+
+.p2{
+    font-size: 10pt;
+}
+
+.start{
+    padding: 15px 20px;
+    font-size: 12pt;
+}
+
+
+.box1{
+    grid-template-columns: 1fr 1fr;
+}
+.box1 div:nth-child(2){
+    padding: 7% 3%;
+}
+
+.box2{
+    grid-template-columns: 1fr 1fr;
+}
+
+.box2 div:nth-child(1){
+    padding: 7% 3%;
+}
+
+ .box1 h3, .box2 h3{
+    font-size: 22pt;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.box1 p, .box2 p{
+    font-size: 10pt;
+}
+
+.More{
+    padding: 15px 20px;
+    font-size: 12pt;
+    margin-bottom: 10%;
+}
+/* ------Галерея------------------- */
+  
+  .galImg{
+      grid-template-columns: 2fr 2fr;
+  }
+
+  .galImg .galIm3{
+    display: none;
+  }
+
+  .galImg .galIm4{
+    display: none;
+  }
+  
+  .galImg:hover .st1{
+    display: none;
+  }
+
+  .galImg:hover .st2{
+      display: none;
+  }
+
+  .galImg:hover .galText{
+      display: none;
+  }
+
+
+  /* таблица---- */
+
+  .tab{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.tab h3{
+    grid-column: 1 / span 2; 
+}
+
+.boxBorder1, .boxBorder3, .boxBorder5{
+    border-right: 1px solid rgb(8, 58, 11);
+}
+
+.boxBorder1, .boxBorder4, .boxBorder3{
+    border-bottom: 1px solid @color14;
+}
+
+.boxBorder2, .boxBorder4{
+    border-right: none;
+}
+
+/* Подвал------------ */
+
+footer{
+    padding-bottom: 10%;
+}
+
+footer .box_img div{
+    width: 40px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 3%;
+    border: 2px solid @color17;
+}
+
+.block1 input::placeholder{
+    font-size: 10pt;
+
+}
+
+.FormTwo>div:nth-child(5) label{
+    align-self: center;
+}
+}
+
+@media screen and (max-width: 600px){
+    
+    /* -----навигация---------- */
+
+    .head_two{  /* Скрыли картинки */
+        display: none;
+    }
+
+   .head_one{
+        display: inline-block;
+        /* grid-template-columns: 1fr; */
+   }
+
+   .head_one a{
+    display: none;
+}
+    .logo{
+        font-size: 12pt;
+        padding: 10%;
+    }
+   
+    /* ---------Блок  с картинками---------- */
+    .box, .box1{
+        grid-template-columns: 1fr;
+        border-bottom: none;
+    }
+    
+    .box div:nth-child(1){
+        grid-row: 2;
+    }
+
+    .start, .More{
+        padding: 15px 20px;
+        font-size: 12pt;
+        margin-bottom: 10%;
+    }
+    
+    .box1 div:nth-child(2){
+       padding: 10% 0;
+    }
+
+    .box1 h1{
+       font-weight: normal;
+    }
+    
+    .box2{
+        grid-template-columns: 1fr;
+    }
+    
+    .box2 div:nth-child(1){
+       grid-row: 2;
+       padding: 10% 0;
+     }
+    
+     .box1 h3, .box2 h3, .box1 p, .box2 p{
+        margin-bottom: 10%;
+    }
+    
+    /* -----------Галерея------------- */
+      
+      .galImg .galim2, .galImg .galim3, .galImg .galim4{
+          display: none;
+      }
+
+      .gal{
+        padding-top: 10%;
+        padding-bottom: 10%;
+      }
+
+      .galImg{
+        grid-template-columns: 1fr;
+      }
+      
+      .galImg img{
+          width: 100%;
+          height: 100%;
+      }
+      
+      /* ----------Таблицы------------- */
+    .tab{
+        grid-template-columns: 1fr;
+        margin: 0 10%;
+    }
+
+    .tab h3{
+        grid-column: 1;
+    }
+
+    .tab div{
+        padding: 15%;
+        justify-self: center;
+        align-self: center;
+        text-align: center;  
+    }
+    
+    
+    .boxBorder1, .boxBorder2, .boxBorder3, .boxBorder4,.boxBorder5, .boxBorder6{
+        border-right: none;
+        border-bottom: 1px solid @color14;
+    }
+    
+    /* ---------Форма----------- */
+
+    .FormTwo{
+        width: 80%;
+        padding-bottom: 15%;
+        padding-top: 15%;
+    }
+
+    .FormTwo .block1{
+        grid-template-columns: 1fr;
+        margin-bottom: 15%;
+    }
+    
+    .block1 input{
+        padding: 3%;
+    }
+    
+    .FormTwo .block2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .FormTwo .block2 div{
+        grid-column: 1/ span 3;
+        margin-bottom: 2%;
+    }
+
+    .FormTwo>div:nth-child(5) label{
+        align-self: center;
+    }
+
+    .form h3{
+        padding-top: 15%;
+    }
+
+    /* -----подвал----------- */
+
+footer{
+    padding: 10% 3%;
+}
+
+footer .box_img div{
+    width: 30px;
+    height: 20px;
+}
+/* --------Иконка меню------------ */
+.menu{
+    display: block;
+    justify-self: end;
+    align-self: center;
+    padding-right: 10%;
+    /* background-color: aqua; */
+}
+
+.menu img{
+    width: 30px;
+    height: 30px;
+}
+   }
