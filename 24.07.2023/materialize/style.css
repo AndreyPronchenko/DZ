@@ -1,0 +1,100 @@
+
+h3{
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.brand-logo{
+    margin-left: 50px;
+}
+
+.icon{
+    margin-right: 50px;
+}
+
+.icon img{
+    width: 50px;
+    margin-top: 8px;
+}
+
+.navi{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.im{
+    float: right;
+    margin-top: -65px;
+    margin-right: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+}
+
+.im i{
+    padding: 10px;
+}
+
+.con{
+    margin-top: 20px;
+    width: 950px;
+    height: 130px;
+    margin-left: 300px;
+    border: 1px solid rgba(130, 116, 116, 0.245);
+    border-bottom: 3px solid rgba(53, 50, 50, 0.372);
+    box-shadow: 0px 0px 5px rgba(134, 121, 121, 0.639);
+}
+
+.con img{
+    margin: 100px 0px 0px 40px;
+}
+
+.con span{
+    font-weight: bold;
+    font-size: 12pt;
+    margin-right: 110px;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+.col{
+    font-size: 9pt;
+    margin-left: 200px;
+    margin-top: -75px;
+    width: 300px;
+    height: 200px;
+}
+
+.col p{
+    margin-left: 20px;
+    margin-top: -17px;
+    margin-bottom: 1px;
+    color: rgba(151, 147, 141, 0.752); 
+}
+
+.col i{
+    color: rgba(151, 147, 141, 0.752); 
+    margin-top: 7px;
+}
+
+.col1{
+    margin-left: 700px;
+    margin-top: -70px;
+    color: blue;
+    font-size: 11pt;
+}
+
+.col1 p{
+    color: blue;
+    width: 130px;
+    margin-top: 1px;
+}
+
