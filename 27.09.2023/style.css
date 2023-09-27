@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+}
+
+.kart {
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-size: 16pt;
+}
