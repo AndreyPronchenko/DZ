@@ -1,0 +1,235 @@
+.se1{
+    position: absolute;
+	top: 0;
+	left: 0;
+    margin-top: 100px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.034);
+	display: none;
+}
+
+h1{
+    margin-left: 600px;
+    color: rgb(25, 170, 195);
+}
+
+body{
+    background-color: rgba(170, 170, 168, 0.8);
+    margin-top: 60px;
+}
+
+.form1{
+    background-color: rgb(173, 218, 212);
+    grid-row-gap: 6%;
+    display: grid;
+    border-radius: 20px;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+}
+
+.form1 .block1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8%;
+    width: 50%;
+    padding: 6%;
+    padding-top: 120px;
+    padding-bottom: 3px;
+}
+
+.block1 input{
+    background-color: rgba(181, 164, 164, 0.165);
+    padding: 2%;
+    width: 64%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 0.402);
+}
+
+.form1 .block2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4%;
+    width: 48%;
+    padding-left: 70px;
+}
+
+.block2 input{
+    padding: 2%;
+    background-color: rgba(181, 164, 164, 0.204);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 90%;
+    height: 50px;
+    font-size: 14pt;
+    margin-top: 15px;
+}
+
+.expiry, .CVV{
+    margin-top: 50px;
+}
+
+.number, .name, .number1, .CVV, .expiry{
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 0.286);
+}
+
+.number1{
+    margin-top: 53px;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.244);
+    padding-left: 10px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 18pt;
+    color: white;
+    background-color: rgb(232, 97, 30);
+    margin: 3px;
+    margin-left: -100px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    width: 800px;
+    padding-left: 100px;
+    margin-top: -50px;
+}
+
+.img{
+   overflow: hidden;
+    margin-top: -335px;
+    margin-left: 805px;
+    border-bottom-right-radius: 20px;
+}
+
+.block1 .logo{
+    margin-bottom: 30px;
+}
+
+.col{
+    margin-top: 30px;
+}
+
+span {
+    margin-left: 150px;
+}
+
+.btn{
+    margin-left: 250px;
+    border-radius: 60px;
+    background-color: rgb(173, 218, 212);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.but_col{
+    border-radius: 60px;
+    background-color: rgb(173, 218, 212);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.but{
+    background-color: rgb(173, 218, 212);
+    border-radius: 60px;
+    padding: 10px;
+    position: absolute;
+	top: 15%;
+	left: 5%;
+    cursor: pointer;
+}
+
+.but:hover, .but_col:hover, .btn:hover{
+	background-color: rgb(37, 169, 199);
+	color: rgb(245, 227, 227);
+}
+
+.close img {
+	width: 23px;
+	height: 23px;
+}
+
+.close {
+	position: absolute;
+	top: 5px;
+	right: 115px;
+	cursor: pointer;
+}
+
+/* // Галлерея */
+
+.fot {
+    display: flex;
+    justify-content: center;
+}
+
+.gal {
+    padding: 20px;
+    width: 850px;
+    height: 400px;
+}
+
+.big {
+    width: 560px;
+    height: 382px;
+    margin-left: 135px;
+}
+
+.big img {
+    width: 100%;
+    height: 100%;
+}
+
+.sm {
+    margin-top: -387px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.sm a img {
+    border: none;
+    width: 110px;
+    height: 90px;
+}
+
+.sma {
+    margin-top: -387px;
+    margin-left: 715px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.sma a img {
+    border: none;
+    width: 110px;
+    height: 90px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: rgb(173, 218, 212);
+}
+
+.button:hover {
+    cursor: pointer;
+    color: rgb(245, 227, 227);
+    background-color: rgb(37, 169, 199);
+}
