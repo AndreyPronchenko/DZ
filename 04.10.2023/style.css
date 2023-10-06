@@ -1,0 +1,120 @@
+body{
+    background-color: rgba(170, 170, 168, 0.196);
+    margin-top: 60px;
+}
+
+.form1{
+    width: 60%;
+    background-color: rgb(173, 218, 212);
+    grid-row-gap: 6%;
+    display: grid;
+    border-radius: 20px;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+}
+
+.form1 .block1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8%;
+    width: 50%;
+    padding: 6%;
+    padding-top: 120px;
+    padding-bottom: 3px;
+}
+
+.block1 input{
+    background-color: rgba(181, 164, 164, 0.165);
+    padding: 2%;
+    width: 64%;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 0.402);
+}
+
+.form1 .block2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4%;
+    width: 48%;
+    padding-left: 70px;
+}
+
+.block2 input{
+    padding: 2%;
+    background-color: rgba(181, 164, 164, 0.204);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 90%;
+    height: 50px;
+    font-size: 14pt;
+    margin-top: 15px;
+}
+
+.expiry, .CVV{
+    margin-top: 50px;
+}
+
+.number, .name, .number1, .CVV, .expiry{
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 0.286);
+}
+
+.number1{
+    margin-top: 53px;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.244);
+    padding-left: 10px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 18pt;
+    color: white;
+    background-color: rgb(232, 97, 30);
+    margin: 3px;
+    margin-left: -100px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    width: 800px;
+    padding-left: 100px;
+    margin-top: -50px;
+}
+
+.img{
+   overflow: hidden;
+    margin-top: -335px;
+    margin-left: 805px;
+    border-bottom-right-radius: 20px;
+}
+
+.block1 .logo{
+    margin-bottom: 30px;
+}
+
+.col{
+    margin-top: 30px;
+}
+
+span {
+    margin-left: 150px;
+}
+
+.btn{
+    margin-left: 250px;
+    border-radius: 60px;
+    background-color: rgb(173, 218, 212);
+    padding: 10px;
+}
+
+.but_col{
+    border-radius: 60px;
+    background-color: rgb(173, 218, 212);
+    padding: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="Плагины/jquery-3.7.0.min.js"></script>
+    <script src="Плагины/jquery.maskedinput.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <section class="se1">
+       <form id="form">
+        <div class="form1">
+        <div class="block1">
+            <h1 class="logo">credit card details</h1>
+            <div class="number">
+            Card Number:
+           </div>
+         <input type="text" id="one" placeholder="1234 5678 9012 3456" value="" class="card">
+        
+         <div class="name">
+            Name On Card:
+          </div>
+         <input type="text" id="two" placeholder="Name Surname" value="" class="card1">
+          </div>
+
+
+          <div class="block2">
+           <div class="expiry">
+            <div>
+             Expiry Date:
+             </div>
+             <input type="text" id="three" placeholder="02" value="" class="card2">
+            </div>
+
+          <div class="number1">
+            <p></p>
+            <input type="text" id="four" placeholder="2017" value="" class="card3">
+             </div>
+             <div class="CVV">
+                <div>
+               CVV / CVN:
+                </div>
+                 <input type="text" id="five" placeholder="***" value="" class="card4">
+                </div>
+          </div>
+        </form>
+
+          <div class="img"><img src="moon_flag.png" alt=""></div>
+       
+    </section>
+   
+    <span>Укажите цвет карты:</span>
+    <input type="color" class="col" value="#FF4500">
+        <button class="but_col">Передать</button>
+  
+      <button class="btn">Отправить форму</button>
+ 
+
+</body>
+</html>
